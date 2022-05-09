@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab5x3.VM.ButtonController">
+
+    <children>
+        <MenuBar VBox.vgrow="NEVER">
+            <menus>
+                <Menu fx:id="inputButton" mnemonicParsing="false" onAction="#InputAction" text="Input" />
+                <Menu fx:id="changeButton" disable="true" mnemonicParsing="false" onAction="#ChangeAction" text="Change" />
+                <Menu fx:id="exitButton" mnemonicParsing="false" onAction="#ExitAction" text="Exit" />
+            </menus>
+        </MenuBar>
+
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Rectangle fx:id="rct" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="270.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
