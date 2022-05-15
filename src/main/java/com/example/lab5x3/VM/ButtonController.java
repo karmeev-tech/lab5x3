@@ -3,7 +3,6 @@ package com.example.lab5x3.VM;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.MenuItem;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,27 +12,18 @@ public class ButtonController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
     @FXML
-    private MenuItem inputButton;
-    @FXML
-    private MenuItem changeButton;
-    @FXML
-    private MenuItem exitButton;
-
-    public void Init(){
-        System.out.print("clear");
-        //inputButton.setVisible(true);
-    }
-    @FXML
     private void InputAction(ActionEvent event){
         System.out.println("input");
+        //exit(0);
     }
     @FXML
     private void ChangeAction(ActionEvent event){
-    System.out.println("change");
+        System.out.println("change");
+        //exit(0);
     }
     @FXML
     private void ExitAction(ActionEvent event){
         System.out.println("exit");
-        System.exit(0);
+        //exit(0);
     }
 }
