@@ -1,29 +1,31 @@
 package com.example.lab5x3.VM;
 
-import javafx.event.ActionEvent;
+import com.example.lab5x3.Model.ChangeClass;
+import com.example.lab5x3.Model.InputClass;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.scene.control.MenuItem;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import static java.lang.System.exit;
 
-public class ButtonController implements Initializable {
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+public class ButtonController {
+    @FXML
+    private MenuItem inputButton;
+    @FXML
+    private MenuItem changeButton;
+    @FXML
+    private MenuItem exitButton;
+    @FXML
+    protected void InputAction() throws Exception {
+        InputClass inputWindow = new InputClass();
+        inputWindow.showWindow();
     }
     @FXML
-    private void InputAction(ActionEvent event){
-        System.out.println("input");
-        //exit(0);
+    protected void ChangeAction(){
+        ChangeClass.Change();
     }
     @FXML
-    private void ChangeAction(ActionEvent event){
-        System.out.println("change");
-        //exit(0);
-    }
-    @FXML
-    private void ExitAction(ActionEvent event){
+    protected void ExitAction(){
         System.out.println("exit");
-        //exit(0);
+        exit(0);
     }
 }
